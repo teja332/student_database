@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Link to Google Fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Levenim+MT:wght@400;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="72.css">
+</head>
+<body>
+  <aside id="sidebar" class="expanded">
+    <div class="logo-container" onclick="toggleMenu()">
+      <img src="../assets/Logo.svg" alt="Student Portal Logo" width="80" height="100">
+      <h1>Student Portal</h1>
+    </div>
+    <ul id="menu">
+      <li id="home" class="active"><a href="#">Home</a></li>
+      <li id="dashboard"><a href="#">Dashboard</a></li>
+      <li id="faq"><a href="#">FAQ'S</a></li>
+      <li id="feedback"><a href="#">Feedback</a></li>
+      <li id="aboutus"><a href="#">About Us</a></li>
+    </ul>
+  </aside>
+  
+  <section>
+    <!-- Heading 2 Styles -->
+    <h2>Welcome</h2>
+    
+    <!-- Student Details Box -->
+    <div class="student-details-box">
+      <h3 class="student-details-heading">Student Details</h3>
+      <div class="student-details">
+        <div class="student-details-item">
+          <span>Academic year</span>
+          <span>:</span>
+          <span>2023-2024</span>
+        </div>
+        <div class="student-details-item">
+          <span>Student name</span>
+          <span>:</span>
+          <span>B. Bheema Teja</span>
+        </div>
+        <div class="student-details-item">
+          <span>Year</span>
+          <span>:</span>
+          <span>2nd year</span>
+        </div>
+        <div class="student-details-item">
+          <span>Admission Number</span>
+          <span>:</span>
+          <span>A22126551072</span>
+        </div>
+        <div class="student-details-item">
+          <span>Department</span>
+          <span>:</span>
+          <span>Computer Science with Data Science</span>
+        </div>
+        <div class="student-details-item">
+          <span>Mail ID</span>
+          <span>:</span>
+          <span>bommalibheemateja.22.csd@anits.edu.in</span>
+        </div>
+        <div class="student-details-item">
+          <span>Phone number</span>
+          <span>:</span>
+          <span>+91 9398982131</span>
+        </div>
+        <!-- Add more student details items as needed -->
+      </div>
+    </div>
+
+<!-- FAQ Box -->
+<div class="faq-box" style="display: none;">
+  <!-- FAQ content will be dynamically added here by JavaScript -->
+</div>
+
+<!-- Dashboard Box -->
+<div class="dashboard-box" style="display: none;">
+  <h3 class="student-details-heading">Dashboard Details</h3>
+  <div class="student-details">
+    <!-- Add dashboard-related student details items here -->
+    <div class="button-row">
+      <button id="attendanceBtn" class="dashboard-button">Attendance Percentage</button>
+      <button id="subjectsBtn" class="dashboard-button">Subjects & Syllabus</button>
+    </div>
+    <div class="button-row">
+      <button id="quizzesBtn" class="dashboard-button">Quizzes</button>
+      <button id="resultsBtn" class="dashboard-button">Results & Overall Grades</button>
+    </div>
+    <div class="button-row">
+      <button id="meritsBtn" class="dashboard-button">Merits & Extra Qualifications</button>
+      <button id="certificatesBtn" class="dashboard-button">Certificates</button>
+    </div>
+    <div class="button-row">
+      <button id="feeInfrastructureBtn" class="dashboard-button">Fee Infrastructure</button>
+    </div>
+    
+    <!-- Style for the pop-up box -->
+<div class="popup-box">
+  <p>Your attendance percentage is 85%</p>
+</div>
+
+    <!-- Add more dashboard-related student details items as needed -->
+
+  </div>  
+</div>
+
+
+
+<!-- About Box -->
+<div class="about-box" style="display: none;">
+  <h3>About Us</h3>
+  <p>We the students of ANITS had created an useful portal for all the students of the college. This student portal serves as a centralised platform for students to access esesential information such as Attendance, Subjects, Results, Merits and Extra Qualifications etc... </p>
+  
+  <p>Designed by <br> B. Bheema Teja <br> A. Sai Tarun <br> M. Rohit varma <br> M. Durga Prasad <br>S. Roopesh <br>R. Madhu <br>U. Raja Sekhar <br> V. Praveen Kumar</p>
+  <!-- Add more content as needed -->
+
+</div>
+
+<!-- Feedback Form -->
+<div class="feedback-form" style="display: none;">
+  <h3>Feedback Form</h3>
+  <form action="#" method="post" id="feedbackForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Feedback:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</div>
+
+    <!-- Content of the dashboard goes here -->
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p class="footer-content">
+      Copyright ©️ 2023-2024 ANIL NEERUKONDA INSTITUTE OF TECHNOLOGY AND SCIENCES (ANITS). <br>
+      Designed & Developed by Computer Science Engineering Department.
+    </p>
+  </footer>
+
+  <!-- Style for the overlay -->
+<div class="overlay" style="display: none;">
+  <!-- Style for the pop-up box -->
+  <div class="popup-box" style="display: none;">
+    <p>Your attendance percentage is 85%</p>
+  </div>
+</div>
+
+<div class="faq-box" style="display: none;"></div>
+
+  
+  <script src="72.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,434 @@
+/* Add the Levenim MT font */
+@font-face {
+  font-family: 'Levenim MT';
+  src: local('Levenim MT'), url('path-to-your-font/LevenimMT.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Levenim MT', sans-serif;  
+  display: flex;
+  height: 100vh;
+  background-color: #FFFBE9;
+}
+
+/* Sidebar Styles */
+aside {
+  width: 20%;
+  background-color: #E3CAA5;
+  height: 100%;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styles */
+section {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+/* Logo Container Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  background-color: #AD8B73;
+  padding: 20px;
+  background-position: relative;
+  z-index: 2;
+}
+
+/* Logo Image Styles */
+.logo-container img {
+  margin-right: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading Styles */
+h1 {
+  color: #fff;
+  margin-bottom: 2%;
+  margin-top: 0;
+  padding-top: 4.5%;
+  padding-left: 5.5%;
+  padding-bottom: 2%;
+  font-size: 2.7vw;
+}
+
+/* Navigation List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List Item Styles */
+li {
+  margin-bottom: 2%;
+  padding-left: 12%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #ccc;
+  background-position: relative;
+  position: relative;
+  z-index: 2;
+}
+
+/* Active List Item Styles */
+li.active {
+  background: linear-gradient(to right, #FFFBE9 50%, #E3CAA5 100%);
+  background-position: relative;
+  position: relative;
+  z-index: 2;
+}
+
+/* Anchor Styles */
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5vw;
+  display: block;
+}
+
+/* Active Home List Item Styles */
+li#home.active {
+  background-color: #FFFBE9;
+}
+
+/* Heading 2 Styles */
+h2 {
+  color: #fff;
+  text-align: center;
+  background-color: #AD8B73;
+  padding: 48.5px;
+  margin: 0;
+  font-size: 3.5vw;
+}
+
+/* Adjust ul styles as needed */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* Collapsed Menu Styles */
+#menu.collapsed {
+  display: none;
+}
+
+/* Menu Styles */
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu Item Styles */
+#menu li {
+  margin-bottom: 2%;
+  padding-left: 12%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Active Menu Item Styles */
+#menu li.active {
+  background: linear-gradient(to right, #FFFBE9 50%, #E3CAA5 100%);
+}
+
+/* Menu Anchor Styles */
+#menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5vw;
+  display: block;
+}
+
+/* Sidebar Styles */
+#sidebar {
+  width: 20%;
+  background-color: #E3CAA5;
+  height: 100%;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+/* Collapsed Sidebar Styles */
+#sidebar.collapsed {
+  width: 0;
+}
+
+/* Hide the menu items when collapsed */
+#sidebar.collapsed #menu {
+  display: none;
+}
+
+/* User Box Styles */
+.user-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+/* Username Styles */
+.username {
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Student Details Box Styles */
+.student-details-box {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.student-details-heading {
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: bold;
+  border-bottom: 2px solid #AD8B73;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.student-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-details-item {
+  flex: 0 0 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.student-details-item span {
+  margin: 0 5px;
+}
+
+.student-details-item span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #AD8B73;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+  z-index: 2;
+}
+
+.footer-content {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Dashboard Box Styles */
+.dashboard-box {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.dashboard-box .student-details-heading {
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: bold;
+  border-bottom: 2px solid #AD8B73;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.dashboard-box .student-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard-box .student-details-item {
+  flex: 0 0 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-box .student-details-item span {
+  margin: 0 5px;
+}
+
+.dashboard-box .student-details-item span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Dashboard Button Styles */
+.dashboard-box .student-details {
+  text-align: center;
+}
+
+.dashboard-box .button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.dashboard-box .dashboard-button {
+  font-family: 'Levenim MT', sans-serif;
+  font-size: 18px;
+  background-color: #DADDB1;
+  color: #000000;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 65px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-box .dashboard-button:hover {
+  background-color: #C7DCA7;
+}
+
+.about-box {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.about-box h3 {
+  font-size: 1.8vw;
+}
+
+.about-box p {
+  font-size: 1.5vw;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h3 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially fully transparent */
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Style for the pop-up box */
+.popup-box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+/* Add background dim effect when the pop-up box is displayed */
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired opacity */
+}
+
+.faq-box {
+  display: none;
+}
+
+.faq-content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
